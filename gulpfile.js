@@ -44,6 +44,7 @@ gulp.task('browserify', function(){
 //added as a convenience to make sure this gulpfile works without much modification
 gulp.task('html', function(){
   return gulp.src('app/**/*.html')
+      .pipe(embedlr())
       .pipe(gulp.dest('dist/static'))
       .pipe(refresh(lrserver));
 });
@@ -61,7 +62,7 @@ gulp.task('server', function () {
 
 var expressServer;
 
-gulp.task('serve', ['server'], function () {
+gulp.task('serveEXPRESS', ['server'], function () {
   //Add livereload middleware before static-middleware
   //Set up your static fileserver, which serves files in the build dir
   var apiServer = require('./dist/server');
@@ -94,6 +95,10 @@ gulp.task('watch', function() {
   gulp.watch('app/**/*.html', function () {
     gulp.run('html');
   });
+
+  gulp.watch('server/**/*.coffee', function () {
+    gulp.run('server');
+  });
 });
 
 gulp.task('default', function () {
@@ -103,7 +108,11 @@ gulp.task('default', function () {
 
 var nodemon = require('gulp-nodemon');
 
-gulp.task('develop', function () {
-  nodemon({ script: 'dist/server.js', options: '-e html,js -i ignored.js' })
-    .on('restart', ['lint'])
-})
+gulp.task('serve',['server'], function () {
+  nodemon({ script: 'dist/index.js', options: '-e dist/html,dist/js -i ignored.js' });
+
+  lrserver.listen(livereloadport);
+
+  console.log("Live reload server listening on port " + livereloadport);
+
+});
