@@ -2,26 +2,21 @@ console.debug = console.log;
 var map = require('map-stream');
 
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  browserify = require('gulp-browserify'),
-  concat = require('gulp-concat'),
-  embedlr = require('gulp-embedlr'),
-  refresh = require('gulp-livereload'),
-  lrserver = require('tiny-lr')(),
-  express = require('express'),
-  livereload = require('connect-livereload'),
-    coffeescript = require('gulp-coffee'),
+    gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
+    browserify = require('gulp-browserify'),
+    concat = require('gulp-concat'),
+    embedlr = require('gulp-embedlr'),
+    refresh = require('gulp-livereload'),
+    lrserver = require('tiny-lr')(),
+    express = require('express'),
+    livereload = require('connect-livereload'),
+    coffee = require('gulp-coffee'),
     fs = require('fs'),
+    open = require('open'),
+    streamqueue = require('streamqueue'),
     livereloadport = 35729,
-  serverport = 5000;
-
-//We only configure the server here and start it only when running the watch task
-//var server = express();
-//Add livereload middleware before static-middleware
-//server.use(livereload({
-//  port: livereloadport
-//}));
-//server.use(express.static('./dist'));
+    serverport = 5000;
 
 //Task for sass using libsass through gulp-sass
 gulp.task('sass', function(){
@@ -31,13 +26,25 @@ gulp.task('sass', function(){
       .pipe(refresh(lrserver));
 });
 
+
+gulp.task('clientcoffee', function () {
+  return gulp.src('app/src/**/*.coffee')
+      .pipe(coffee()).on('error', gutil.log)
+      .pipe(gulp.dest('./.tmp/clientcoffee'));
+});
+
 //Task for processing js with browserify
 gulp.task('browserify', function(){
-  return gulp.src('app/src/*.js')
+return streamqueue({ objectMode: true },
+        gulp.src('app/src/**/*.js'),
+        gulp.src('app/src/**/*.coffee')
+          .pipe(coffee()).on('error', gutil.log)
+    )
+      .pipe(concat('dest.js'))
       .pipe(browserify())
-   .pipe(concat('dest.js'))
       .pipe(gulp.dest('dist/static'))
       .pipe(refresh(lrserver));
+
 });
 
 //Task for moving html-files to the build-dir
@@ -56,15 +63,13 @@ gulp.task('build', function() {
 
 gulp.task('server', function () {
   return gulp.src('server/**/*.coffee')
-      .pipe(coffeescript())
+      .pipe(coffee()).on('error', gutil.log)
       .pipe(gulp.dest('./dist/'));
 });
 
 var expressServer;
 
 gulp.task('serveEXPRESS', ['server'], function () {
-  //Add livereload middleware before static-middleware
-  //Set up your static fileserver, which serves files in the build dir
   var apiServer = require('./dist/server');
   expressServer = apiServer(function (server) {
     server.use(livereload({
@@ -101,10 +106,13 @@ gulp.task('watch', function() {
   });
 });
 
-gulp.task('default', function () {
-  gulp.run('build', 'serve', 'watch');
+gulp.task('open', function(){
+  open('http://localhost:5000/');
 });
 
+gulp.task('default', function () {
+  gulp.run('build', 'serve', 'watch', 'open');
+});
 
 var nodemon = require('gulp-nodemon');
 

@@ -27,7 +27,10 @@
     "ecstatic": "~0.4.13",
     "gulp-mocha": "~0.4.1",
     "map-stream": "~0.1.0",
-    "gulp-nodemon": "~0.1.2"
+    "gulp-nodemon": "~0.1.2",
+    "streamqueue": "0.0.5",
+    "gulp-open": "~0.2.8",
+    "open": "0.0.4"
   },
   "optionalDependencies": {}
 }

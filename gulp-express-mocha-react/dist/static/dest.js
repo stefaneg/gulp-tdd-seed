@@ -3,4 +3,16 @@ module.exports = {
   title:"Web Kata1"
 };
 
+(function() {
+  var TestClassOne;
+
+  module.exports = TestClassOne = (function() {
+    function TestClassOne() {}
+
+    return TestClassOne;
+
+  })();
+
+}).call(this);
+
 },{}]},{},[1])
