@@ -26,25 +26,22 @@ gulp.task('sass', function(){
       .pipe(refresh(lrserver));
 });
 
-
-gulp.task('clientcoffee', function () {
-  return gulp.src('app/src/**/*.coffee')
-      .pipe(coffee()).on('error', gutil.log)
-      .pipe(gulp.dest('./.tmp/clientcoffee'));
-});
-
-//Task for processing js with browserify
-gulp.task('browserify', function(){
-return streamqueue({ objectMode: true },
-        gulp.src('app/src/**/*.js'),
-        gulp.src('app/src/**/*.coffee')
-          .pipe(coffee()).on('error', gutil.log)
-    )
-      .pipe(concat('dest.js'))
-      .pipe(browserify())
+gulp.task('browser-vendor', function () {
+  return gulp.src('app/vendor/**/*.js')
+      .pipe(concat('vendor.js'))
       .pipe(gulp.dest('dist/static'))
       .pipe(refresh(lrserver));
+});
 
+gulp.task('browserify', function(){
+  return gulp.src('app/src/app.coffee')
+      .pipe(browserify({
+         transform: ['coffeeify'],
+         extensions: ['.coffee']
+      })).on('error', gutil.log)
+      .pipe(concat('application.js'))
+      .pipe(gulp.dest('dist/static'))
+      .pipe(refresh(lrserver));
 });
 
 //Task for moving html-files to the build-dir
@@ -58,11 +55,11 @@ gulp.task('html', function(){
 
 //Convenience task for running a one-off build
 gulp.task('build', function() {
-  return gulp.run('html', 'browserify', 'sass');
+  return gulp.run('html', 'browserify','browser-vendor', 'sass');
 });
 
 gulp.task('server', function () {
-  return gulp.src('server/**/*.coffee')
+  return gulp.src('server/src/**/*.coffee')
       .pipe(coffee()).on('error', gutil.log)
       .pipe(gulp.dest('./dist/'));
 });
@@ -92,8 +89,12 @@ gulp.task('watch', function() {
   });
 
   //Add watching on js-files
-  gulp.watch('app/**/*.js', function() {
+  gulp.watch(['app/src/**/*.js','app/src/**/*.coffee'], function() {
     gulp.run('browserify');
+  });
+
+  gulp.watch(['app/vendor/**/*.js'], function() {
+    gulp.run('browser-vendor');
   });
 
   //Add watching on html-files
@@ -106,7 +107,7 @@ gulp.task('watch', function() {
   });
 });
 
-gulp.task('open', function(){
+gulp.task('open',['serve'], function(){
   open('http://localhost:5000/');
 });
 

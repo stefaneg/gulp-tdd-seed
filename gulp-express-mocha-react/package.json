@@ -30,7 +30,8 @@
     "gulp-nodemon": "~0.1.2",
     "streamqueue": "0.0.5",
     "gulp-open": "~0.2.8",
-    "open": "0.0.4"
+    "open": "0.0.4",
+    "coffeeify": "~0.6.0"
   },
   "optionalDependencies": {}
 }
