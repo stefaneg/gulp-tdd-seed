@@ -1,2 +1,2 @@
-console.log("Running server")
+console.log("Running server...")
 require('./server')({port:5000})

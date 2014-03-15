@@ -15,7 +15,9 @@ var gulp = require('gulp'),
     fs = require('fs'),
     open = require('open'),
     streamqueue = require('streamqueue'),
+    mocha = require('gulp-mocha'),
     livereloadport = 35729,
+    es = require('event-stream'),
     serverport = 5000;
 
 //Task for sass using libsass through gulp-sass
@@ -102,9 +104,15 @@ gulp.task('watch', function() {
     gulp.run('html');
   });
 
-  gulp.watch('server/**/*.coffee', function () {
+  gulp.watch(['server/**/*.js', 'server/**/*.coffee'], function () {
     gulp.run('server');
   });
+
+  gulp.watch(['server/**/*.js', 'server/**/*.coffee', 'server/test/**/*'], function () {
+    gulp.run('server-test');
+  });
+
+
 });
 
 gulp.task('open',['serve'], function(){
@@ -112,7 +120,18 @@ gulp.task('open',['serve'], function(){
 });
 
 gulp.task('default', function () {
-  gulp.run('build', 'serve', 'watch', 'open');
+  gulp.run('build', 'serve', 'watch', 'open', 'server-test');
+});
+
+gulp.task('server-test', function () {
+
+  es = require("event-stream")
+
+  es.concat(
+          gulp.src('server/src/**/*.coffee').pipe(coffee()).on('error', gutil.log),
+          gulp.src(['server/src/**/*.js','server/test/**/*']))
+      .pipe(gulp.dest('output/testsrc'))
+      .pipe(mocha({reporter: 'nyan'})).on('error', gutil.log);
 });
 
 var nodemon = require('gulp-nodemon');

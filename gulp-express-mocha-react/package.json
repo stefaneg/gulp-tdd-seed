@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "express": "~3.4.8",
-    "connect-livereload": "~0.3.2"
+    "connect-livereload": "~0.3.2",
+    "event-stream": "~3.1.0"
   },
   "devDependencies": {
     "gulp-util": "~2.2.14",
@@ -31,7 +32,8 @@
     "streamqueue": "0.0.5",
     "gulp-open": "~0.2.8",
     "open": "0.0.4",
-    "coffeeify": "~0.6.0"
+    "coffeeify": "~0.6.0",
+    "expect": "~0.1.1"
   },
   "optionalDependencies": {}
 }

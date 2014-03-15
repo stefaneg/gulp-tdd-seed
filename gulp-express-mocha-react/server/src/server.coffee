@@ -5,6 +5,7 @@ module.exports = (options)->
   server = express()
   server.use(express.static('./dist/static'))
   port = options.port || 5000
+  console.debug('starting server...')
   httpserver = server.listen(port);
   console.log("Express server listening on port " + port);
 
