@@ -14,7 +14,6 @@ var gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     fs = require('fs'),
     open = require('open'),
-    streamqueue = require('streamqueue'),
     mocha = require('gulp-mocha'),
     livereloadport = 35729,
     es = require('event-stream'),
@@ -123,15 +122,20 @@ gulp.task('default', function () {
   gulp.run('build', 'serve', 'watch', 'open', 'server-test');
 });
 
+function handleError(err) {
+  console.log(err.toString());
+  this.emit('end');
+}
+
 gulp.task('server-test', function () {
 
   es = require("event-stream")
 
   es.concat(
-          gulp.src('server/src/**/*.coffee').pipe(coffee()).on('error', gutil.log),
-          gulp.src(['server/src/**/*.js','server/test/**/*']))
+          gulp.src('server/src/api/**/*.coffee').pipe(coffee()).on('error', gutil.log),
+          gulp.src(['server/src/api/**/*.js','server/test/**/*']))
       .pipe(gulp.dest('output/testsrc'))
-      .pipe(mocha({reporter: 'nyan'})).on('error', gutil.log);
+      .pipe(mocha({reporter: 'nyan'})).on('error', handleError);
 });
 
 var nodemon = require('gulp-nodemon');
