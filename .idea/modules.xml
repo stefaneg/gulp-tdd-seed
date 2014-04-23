@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/webkata1.iml" filepath="$PROJECT_DIR$/.idea/webkata1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gulp-tdd-seed.iml" filepath="$PROJECT_DIR$/.idea/gulp-tdd-seed.iml" />
     </modules>
   </component>
 </project>
