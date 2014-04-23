@@ -1,16 +1,17 @@
 {
-  "name": "gulp-express-mocha-react",
+  "name": "gulp-tdd-seed",
   "version": "0.0.1",
-  "description": "Empty project using gulp, mocha and react",
+  "description": "Seed project using gulp, webpack, mocha. Optimized for TDD.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "~3.4.8"
+  },
   "devDependencies": {
     "ecstatic": "~0.4.13",
     "event-stream": "~3.1.0",
     "coffeeify": "~0.6.0",
     "expect": "~0.1.1",
     "gulp": "~3.5.2",
-    "express": "~3.4.8",
     "gulp-concat": "~2.1.7",
     "gulp-mocha": "~0.4.1",
     "gulp-open": "~0.2.8",
@@ -37,11 +38,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefaneg/newapp-templates.git"
+    "url": "https://github.com/stefaneg/gulp-tdd-seed.git"
   },
   "author": "Guðlaugur Egilsson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stefaneg/newapp-templates/issues"
+    "url": "https://github.com/stefaneg/gulp-tdd-seed/issues"
   }
 }
