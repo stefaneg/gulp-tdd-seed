@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" name="Default" comment="function () {&#10;    console.debug('---------------------- Nodemon process started');&#10;    open('http://localhost:5000/');&#10;  }">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/test/testone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/webpack.config.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/tests.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.coffee" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/vendor-test/mocha/mocha.css" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/test/mocha.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/vendor-test/mocha/mocha.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/web_modules/mocha.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/vendor/jquery/jquery-1.11.0.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/web_modules/jquery-2.0.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/.gitignore" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/server/src/index.coffee" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/server/src/index.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/index.html" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/package.json" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/package.json" />
+    <list default="true" id="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/readme.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile-ecstatic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile-webpack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile-with-browserify.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js" afterPath="$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -26,10 +18,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/app.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1393196479947" ignored="false" />
     <file path="/index.html" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396611895368" ignored="false" />
-    <file path="/app.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396542507258" ignored="false" />
-    <file path="/Dummy.txt" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396623396467" ignored="false" />
+    <file path="/app.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396626050793" ignored="false" />
+    <file path="/Dummy.txt" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1398288407550" ignored="false" />
     <file path="$PROJECT_DIR$/../../heroku/hlaupa-com/gulpfile.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1392575100839" ignored="false" />
-    <file path="/gulpfile.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396623214455" ignored="false" />
+    <file path="/gulpfile.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396626291344" ignored="false" />
     <file path="/server.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396623377348" ignored="false" />
     <file path="/server.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396615193700" ignored="false" />
     <file path="/index.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1392591248963" ignored="false" />
@@ -37,16 +29,17 @@
     <file path="/test-one.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396622850508" ignored="false" />
     <file path="/hello.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396622464374" ignored="false" />
     <file path="/tests.html" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1394902127471" ignored="false" />
-    <file path="/a.dummy" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396541697354" ignored="false" />
+    <file path="/a.dummy" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396626526930" ignored="false" />
     <file path="$PROJECT_DIR$/../../samples/webpack-with-common-libs-master/app/test/index.html" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396529123384" ignored="false" />
     <file path="$PROJECT_DIR$/../../samples/webpack-with-common-libs-master/package.json" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396529485055" ignored="false" />
     <file path="$PROJECT_DIR$/../../samples/webpack-with-common-libs-master/app/test/test.first.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396529548833" ignored="false" />
     <file path="/class.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396533402373" ignored="false" />
     <file path="/webpack.config.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396543405115" ignored="false" />
     <file path="$PROJECT_DIR$/../../samples/webpack-with-common-libs-master/webpack.config.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396541481705" ignored="false" />
-    <file path="/class2.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396623812528" ignored="false" />
+    <file path="/class2.coffee" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396626089421" ignored="false" />
     <file path="/testone.js" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396543491864" ignored="false" />
     <file path="/.gitignore" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396624058106" ignored="false" />
+    <file path="/readme.md" changelist="c8b88581-ccad-4f74-98bb-8040dcfa9c2c" time="1396627037308" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,25 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="36" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="196" column="0" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04109589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-one.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/test-one.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +89,7 @@
       <file leaf-file-name="class2.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="26" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+            <state line="8" column="5" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,34 +98,7 @@
       <file leaf-file-name="class.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="0" selection-end="27" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/test/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/src/api/hello.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+            <state line="1" column="33" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,25 +107,34 @@
       <file leaf-file-name="test-one.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="32" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+            <state line="22" column="3" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/dist/tests.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="64415" selection-end="64415" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="7" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.33216783">
+            <state line="8" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,30 +167,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/test/index.html" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/test/testone.js" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/dist/static/index.html" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/webpack.config.js" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/index.html" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/server/src/index.coffee" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/dist/server.js" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/hello.js" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/test-one.js" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/server/src/api/hello.coffee" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/.gitignore" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/test-one.js" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js" />
         <option value="$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/.gitignore" />
-        <option value="$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee" />
+        <option value="$PROJECT_DIR$/gulp-express-mocha-react/readme.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="869" />
-    <option name="y" value="46" />
+    <option name="x" value="40" />
+    <option name="y" value="47" />
     <option name="width" value="1676" />
-    <option name="height" value="1371" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -225,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,222 +240,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testsrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webkata1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp-express-mocha-react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../samples/webpack-with-common-libs-master" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -569,17 +354,21 @@
       <created>1396523092387</created>
       <updated>1396523092387</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="All aspects working now. Cleanup ahead.">
+      <created>1396625976323</created>
+      <updated>1396625976323</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="869" y="46" width="1676" height="1371" extended-state="0" />
+    <frame x="40" y="47" width="1676" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29176658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29176658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24742892" sideWeight="0.86432564" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17120387" sideWeight="0.7082334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17120387" sideWeight="0.6706635" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -588,7 +377,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32933652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -637,7 +426,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mocha" />
+    <option name="LAST_COMMIT_MESSAGE" value="All aspects working now. Cleanup ahead." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -659,109 +448,47 @@
     <MESSAGE value="Assembling client src correctly now. Supports js and coffeescript in client." />
     <MESSAGE value="Gulp now running and watching server side tests." />
     <MESSAGE value="Added mocha" />
+    <MESSAGE value="All aspects working now. Cleanup ahead." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1396624117000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/src/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="32" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/dist/tests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="64415" selection-end="64415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="2" selection-start="64415" selection-end="64415" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/src/api/hello.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="14" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/test-one.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.26223776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="0" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="5" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="5" column="7" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/dist/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="308" selection-end="308" vertical-scroll-proportion="0.1923077">
-          <folding />
-        </state>
+        <state line="11" column="5" selection-start="308" selection-end="308" vertical-scroll-proportion="0.1923077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/.gitignore">
@@ -771,9 +498,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class2.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/app/src/class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="33" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/output/testsrc/test-one.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/src/server.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.33216783">
+        <state line="8" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/server/test/test-one.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="0" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp-express-mocha-react/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04109589">
           <folding />
         </state>
       </provider>

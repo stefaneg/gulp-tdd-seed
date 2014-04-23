@@ -15,7 +15,8 @@ var gulp = require('gulp'),
     mocha = require('gulp-mocha'),
     es = require('event-stream'),
     webpack = require('webpack'),
-    WebpackDevServer = require('webpack-dev-server');
+    WebpackDevServer = require('webpack-dev-server'),
+    filter = require('gulp-filter');
 
 var
     livereloadport = 35729,
@@ -48,64 +49,10 @@ gulp.task('build', function () {
 });
 
 gulp.task('server', function () {
-  console.debug('Running server compile coffee');
   return gulp.src('server/src/**/*.coffee')
       .pipe(coffee()).on('error', gutil.log)
       .pipe(gulp.dest('./dist/'));
 });
-
-var expressServer;
-
-gulp.task('serveWithWebpackMiddleware', ['server'], function () {
-  var apiServer = require('./dist/server');
-
-  var webpackDevMiddleware = require("webpack-dev-middleware");
-
-  var myConfig = Object.create(webpackConfig);
-  myConfig.devtool = "eval";
-  myConfig.watch = true;
-  myConfig.debug = true;
-
-  expressServer = apiServer({config: function (server) {
-    console.debug('Configure middleware');
-    server.use(
-        webpackDevMiddleware(webpack(myConfig),
-            {
-              // all options optional
-
-              noInfo: false,
-              // display no info to console (only warnings and errors)
-
-              quiet: false,
-              // display nothing to the console
-
-              lazy: false,
-              // switch into lazy mode
-              // that means no watching, but recompilation on every request
-
-              watchDelay: 10,
-              // delay after change (only lazy: false)
-
-              publicPath: "/",
-              // public path to bind the middleware to
-              // use the same as in webpack
-
-              headers: { "X-Custom-Header": "yes" },
-              // custom headers
-
-              stats: {
-                colors: true
-              }
-            })
-    );
-  }});
-
-  expressServer.listen(serverport);
-
-  //Set up your livereload server
-  lrserver.listen(livereloadport);
-});
-
 
 gulp.task('watch-app', function () {
 
@@ -143,11 +90,8 @@ function handleError(err) {
   this.emit('end');
 }
 
-var filter = require('gulp-filter');
-
 gulp.task('server-test', function () {
   es = require("event-stream");
-  console.debug('server test........................');
   return es.concat(
           gulp.src('server/src/**/*.coffee').pipe(coffee()).on('error', gutil.log),
           gulp.src(['server/src/**/*.js', 'server/test/**/*']))
@@ -178,11 +122,8 @@ gulp.task('webpack:build', function (callback) {
     gutil.log("[webpack:build]", stats.toString({
       colors: true
     }));
-    console.debug('DONE!');
     callback();
   });
-  console.debug('DONE one');
-
 });
 
 gulp.task("webpack-dev-server", function (callback) {
@@ -196,6 +137,7 @@ gulp.task("webpack-dev-server", function (callback) {
   new WebpackDevServer(webpack(myConfig), {
     publicPath: "/" + myConfig.output.publicPath,
     contentBase: "./app/",
+    noInfo: true,
     stats: {
       colors: true
     }
@@ -218,6 +160,7 @@ gulp.task("webpack-test-server", function (callback) {
   new WebpackDevServer(webpack(myConfig), {
     publicPath: "/" + myConfig.output.publicPath,
     contentBase: "./app/test",
+    noInfo: true,
     stats: {
       colors: true
     }
@@ -229,17 +172,15 @@ gulp.task("webpack-test-server", function (callback) {
 });
 
 gulp.task('serve',['build','server'], function () {
-  console.debug('Running nodemon');
-  nodemon({ script: 'dist/index.js', env:{'NODE_ENV':'development'}, options: '--watch dist/*.js --ignore dist/tests.js' }).on('start', 'open');
+  nodemon({ script: 'dist/index.js', env:{'NODE_ENV':'development'}, options: '--watch dist/*.js --ignore dist/tests.js' }).on('start', 'nodemon-open');
 
   console.log("Live reload server listening on port " + livereloadport);
   lrserver.listen(livereloadport);
 });
 
-gulp.task("dev-old", ["webpack-dev-server", "webpack-test-server", "serve", "server-test"]);
-
+// We only want to open browser on first start
 var localhost_open = false;
-gulp.task('open', function () {
+gulp.task('nodemon-open', function () {
   !localhost_open && (localhost_open=true) && open('http://localhost:5000/');
 });
 

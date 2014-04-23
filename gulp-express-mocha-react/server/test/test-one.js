@@ -1,5 +1,4 @@
 
-console.debug('Loading test one.....................!......');
 
 var hello = require("./api/hello");
 var expect = require("expect");
@@ -17,7 +16,6 @@ describe('Array', function(){
 
 describe('Hello', function () {
   it('should call me back with world please.', function () {
-    console.debug('hello', hello);
     new hello().greet(function (err, result) {
       expect(result).toBe("world")
     });

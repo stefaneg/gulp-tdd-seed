@@ -6,8 +6,6 @@ module.exports = (options)->
   options?.config?(server)
   server.use(express.static('./dist/static'))
   port = options.port || 5000
-  console.debug('starting server...WITH AN API!')
-
 
   server.get('/api', (req, res)->
     res.send('API is running again.')

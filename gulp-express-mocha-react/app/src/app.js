@@ -7,4 +7,6 @@ console.log("required jquery", $);
 
 $('#h1').html(new c().title);
 
-$(document.body).append(new c2().myname);
+new c2(function (data) {
+  $(document.body).append(data);
+});
