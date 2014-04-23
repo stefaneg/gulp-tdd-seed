@@ -23,7 +23,7 @@ var
     serverport = 5000;
 
 /** webpack **/
-    webpackConfig = require('./webpack.config');
+    webpackConfig = require('./webpack.config.js');
 
 
 //Task for sass using libsass through gulp-sass
