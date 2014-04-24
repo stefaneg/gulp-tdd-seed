@@ -16,7 +16,8 @@ var gulp = require('gulp'),
     es = require('event-stream'),
     webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server'),
-    filter = require('gulp-filter');
+    filter = require('gulp-filter'),
+    clean = require('gulp-clean');
 
 var
     livereloadport = 35729,
@@ -25,6 +26,11 @@ var
 /** webpack **/
     webpackConfig = require('./webpack.config.js');
 
+
+gulp.task('clean', function() {
+    gulp.src(['dist','output'], {read: false})
+        .pipe(clean());
+});
 
 //Task for sass using libsass through gulp-sass
 gulp.task('sass', function () {
@@ -172,7 +178,7 @@ gulp.task("webpack-test-server", function (callback) {
 });
 
 gulp.task('serve',['build','server'], function () {
-  nodemon({ script: 'dist/index.js', env:{'NODE_ENV':'development'}, options: '--watch dist/*.js --ignore dist/tests.js' }).on('start', 'nodemon-open');
+  nodemon({ script: 'dist/index.js', env:{'NODE_ENV':'development', 'STATIC_ROOT':"./dist/static"}, options: '--watch dist/*.js --ignore dist/tests.js' }).on('start', 'nodemon-open');
 
   console.log("Live reload server listening on port " + livereloadport);
   lrserver.listen(livereloadport);
@@ -184,13 +190,14 @@ gulp.task('nodemon-open', function () {
   !localhost_open && (localhost_open=true) && open('http://localhost:5000/');
 });
 
-gulp.task('dev-final', ['watch-server','webpack-dev-server', 'serve', 'watch-app', 'server-test', 'webpack-test-server'], function () {
-});
-
 gulp.task('dev', ['watch-server','webpack-dev-server', 'serve', 'watch-app', 'webpack-test-server', 'server-test','watch-server-test'], function () {
 });
 
 gulp.task('default', function () {
+  /*todo remove usage of run. */
   gulp.run('build', 'serve', 'watch-server', 'open', 'server-test');
 });
 
+gulp.task('dist',['build','server','webpack:build'], function () {
+
+});

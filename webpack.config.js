@@ -7,7 +7,7 @@ module.exports = {
     tests:["./test/testone.js"]
   },
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "dist/static"),
     filename: "[name].js",
     library: "Application",
     libraryTarget: "umd",

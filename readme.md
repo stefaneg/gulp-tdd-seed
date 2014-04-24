@@ -9,3 +9,10 @@ Aims to provide ultimate TDD workflow with single command launching
 
 ## Getting started
 
+Start dev env by running
+    gulp dev
+
+Package for distribution by running
+    gulp dist
+
+

@@ -1,0 +1,17 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "dist/tests.js"
+  ],
+  "verbose": true,
+  "watch": [
+    "dist/*.js"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "STATIC_ROOT": "./dist/static"
+  },
+  "ext": "js json"
+}
